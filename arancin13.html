@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"ARAN ÇiN" FİRMASI</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(107, 8, 8);
+            background-color: #d8d3d3;
+        }
+        header {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1598970434795-0c54fe7c0644?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgb#d8d3d3;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #520000;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        nav {
+            background-color: rgba(0,0,0,0.85);
+            position: sticky;
+            top: 0;
+            text-align: center;
+            padding: 10px 0;
+            z-index: 3;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #520000;
+        }
+        section {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+        section h2 {
+            color: #520000;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        section p, ul {
+            color: #000000;
+            line-height: 1.6;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: "🏋️‍♂️ ";
+        }
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .contact a {
+            display: inline-block;
+            background-color: #520000;
+            color: white;
+            padding: 12px 25px;
+            margin: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .contact a:hover {
+            background-color:#520000 ;
+        }
+        footer {
+            background-color: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ARAN ÇiN</h1>
+    <p>Obyektlərin icarəyə verilməsi</p>
+</header>
+
+<nav>
+    <a href="#about">Haqqımızda</a>
+    <a href="#contact">Əlaqə</a>
+</nav>
+
+<section id="about">
+    <h2>Haqqımızda</h2>
+    <h2>Biz kimik?</h2>
+    <p>Şirkətimiz müxtəlif təyinatlı obyektlərin icarəyə verilməsi sahəsində peşəkar fəaliyyət göstərir. Biz müştərilərimizə yüksək keyfiyyətli xidmət, şəffaf şərtlər və etibarlı əməkdaşlıq təmin etməyi prioritet hesab edirik. Məqsədimiz qarşılıqlı faydalı uzunmüddətli münasibətlər quraraq müştəri məmnuniyyətini maksimum səviyyədə təmin etməkdir.</p>
+</section>
+
+<section id="contact" class="contact">
+    <h2> Əlaqə məlumatları</h2>
+    <p>📍 Nizami rayonu, Keşlə qəsəbəsi, Qafqaz küçəsi 21 məhlə</p>
+    <p>📞 +994 50 216 06 91</p>
+    <p>📧 valehmammedov@gmail.com</p>
+    <a href="tel:+994 50 216 06 91">Zəng etmək</a>
+</section>
+
+<footer>
+    <p>© 2025 "ARAN ÇiN" FİRMASI Tərəfindən yaradılmışdır.</p>
+</footer>
+
+</body>
+</html>
